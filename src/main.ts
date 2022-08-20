@@ -418,7 +418,7 @@ window.onload = async function () {
           // document.getElementById("submit").disabled = true;
           fetchPretty(data, {action: "uncheck"}).then((res) => {
             toast({
-              message: JSON.stringify(res.json()),
+              message: JSON.stringify(res),
               type: res.ok ? "is-success" : "is-danger"
             })
             // personName.disabled = false
